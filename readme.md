@@ -1,4 +1,4 @@
-The `gh_slack_reminder` GitHub Action is designed to send reminders to Slack channels about pending pull requests in your repository. This helps teams stay informed and ensures that pull requests receive timely reviews.
+The `gh_slack_reminder` GitHub Action is designed to send reminders to Slack channels about pending pull requests in your repository. This helps teams stay informed and ensures that pull requests receive timely reviews.
 
 ## Features
 
@@ -10,22 +10,22 @@ The `gh_slack_reminder` GitHub Action is designed to send reminders to Slack cha
 
 Before setting up the action, ensure you have:
 
-- **Slack Incoming Webhook URL**: This is required to send messages to your Slack workspace.
-- **GitHub Personal Access Token (PAT)**: Needed to authenticate and fetch pull request data.
+- **Slack Incoming Webhook URL**: This is required to send messages to your Slack workspace.
+- **GitHub Personal Access Token (PAT)**: Needed to authenticate and fetch pull request data.
 
 ## Setup Instructions
 
 1. **Obtain Slack Incoming Webhook URL**:
-   - Navigate to your Slack workspace and create an incoming webhook.
-   - Note down the provided webhook URL; it will be used in the GitHub Action.
+   - Navigate to your Slack workspace and create an incoming webhook.
+   - Note down the provided webhook URL; it will be used in the GitHub Action.
 
 2. **Generate GitHub Personal Access Token**:
-   - Go to your GitHub account's settings.
-   - Under "Developer settings," select "Personal access tokens" and generate a new token with the necessary permissions.
-   - Keep this token secure; it will be used to authenticate API requests.
+   - Go to your GitHub account's settings.
+   - Under "Developer settings," select "Personal access tokens" and generate a new token with the necessary permissions.
+   - Keep this token secure; it will be used to authenticate API requests.
 
 3. **Store Secrets in GitHub Repository**:
-   - In your repository, navigate to "Settings" > "Secrets and variables" > "Actions."
+   - In your repository, navigate to "Settings" > "Secrets and variables" > "Actions."
    - Add the following secrets:
      - `SLACK_WEBHOOK_URL`: Your Slack incoming webhook URL.
      - `GITHUB_TOKEN`: Your GitHub Personal Access Token.

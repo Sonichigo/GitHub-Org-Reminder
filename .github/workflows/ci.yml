@@ -31,9 +31,9 @@ jobs:
           -o Dpkg::Options::="--force-confdef" \
           -o Dpkg::Options::="--force-confold"
           
-      - name: Install Keploy VSCode Extension
+      - name: Install ValidYML Extension
         run: |
-          code --no-sandbox --user-data-dir /tmp --install-extension keploy.keployio
+          code --no-sandbox --user-data-dir /tmp --install-extension Sonichigo.validyml
       
       - name: Verify Installation
         run: |
